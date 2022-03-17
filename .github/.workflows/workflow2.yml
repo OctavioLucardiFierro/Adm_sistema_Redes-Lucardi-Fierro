@@ -12,5 +12,5 @@ jobs:
         uses: actions/ setup-java@v1
         whith:
           java-version: 1.8
-        name: echo a string
+      - name: echo a string
         run: echo "Hello world"
