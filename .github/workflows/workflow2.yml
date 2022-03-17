@@ -27,3 +27,8 @@ jobs:
    steps:
      - run: |    
         ls -a /
+        
+  mostrar_ubicacion:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pwd
