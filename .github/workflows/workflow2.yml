@@ -1,7 +1,7 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  Hola:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -11,18 +11,18 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       
-  hola:
+  Mostrar_etc:
     runs-on: ubuntu-latest
     steps:
       - run: ls /etc
       
-  wuakandaforever:
+  mostrar_ocultos:
    runs-on: ubuntu-latest
    steps:
      - run: |    
         ls -a /
      
-  ooohheldenring:
+  mostrar_ocultos2:
    runs-on: ubuntu-latest
    steps:
      - run: |    
