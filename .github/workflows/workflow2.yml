@@ -3,7 +3,7 @@ name: Hola
 on: [push]
 
 jobs:
-  build:
+  check-beats-version:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,9 +14,4 @@ jobs:
       - name: echo a string
       - run: npm install -g bats
       - run: bats -v
-      - run: echo "Hello world"
-  mostrar:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ejecuta ls
-        run: ls/ etc
+ 
