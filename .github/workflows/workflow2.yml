@@ -1,17 +1,29 @@
-name: Hola
-
+name: learn-github-actions
 on: [push]
-
 jobs:
-  check-beats-version:
+  check-bats-version:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: echo a string
       - run: npm install -g bats
       - run: bats -v
- 
+      
+  hola:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ls /etc
+      
+  wuakandaforever:
+   runs-on: ubuntu-latest
+   steps:
+     - run: |    
+        ls -a /
+     
+  ooohheldenring:
+   runs-on: ubuntu-latest
+   steps:
+     - run: |    
+        ls -a /
