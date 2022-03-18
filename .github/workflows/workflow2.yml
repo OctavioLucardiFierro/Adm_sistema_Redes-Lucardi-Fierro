@@ -36,4 +36,4 @@ jobs:
   crear_archivo:
     runs-on: ubuntu-latest
     steps:
-      - run: cat > prueba.txt
+      - run: touch prueba.txt
