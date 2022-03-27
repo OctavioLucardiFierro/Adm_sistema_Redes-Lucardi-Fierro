@@ -43,3 +43,25 @@ jobs:
       - run: mkdir alumno
       - run: cd alumno
       - run: pwd
+  crear_estructura:
+    runs-on: ubuntu-latest
+    steps:
+      - run: mkdir home
+      - run: cd home
+      - run: mkdir alumno
+      - run: cd alumno
+      - run: mkdir Optica Informatica Turismo
+      - run: cd Optica 
+      - run: mkdir AlumnosOpt ProfesoresOpt AulasOpt
+      - run: cd AlumnosOpt
+      - run: touch NotasOpt.txt
+      - run: ../../
+      - run: cd Informatica
+      - run: mkdir AlumnosInf ProfesoresInf AulasInf
+      - run: cd AlumnosInf
+      - run: touch NotasInf.txt
+      - run: ../../
+      - run: cd Turismo
+      - run: mkdir AlumnosTur ProfesoresTur AulasTur
+      - run: cd AlumnosTur
+      - run: touch NotasTur.txt
