@@ -55,12 +55,12 @@ jobs:
       - run: mkdir AlumnosOpt ProfesoresOpt AulasOpt
       - run: cd AlumnosOpt
       - run: touch NotasOpt.txt
-      - run: cd ../
+      - run: cd ../../
       - run: cd Informatica
       - run: mkdir AlumnosInf ProfesoresInf AulasInf
       - run: cd AlumnosInf
       - run: touch NotasInf.txt
-      - run: cd ../
+      - run: cd ../../
       - run: cd Turismo
       - run: mkdir AlumnosTur ProfesoresTur AulasTur
       - run: cd AlumnosTur
