@@ -1,8 +1,14 @@
-public class Suma {
-    int numero1 = 4;
-    int numero2 = 88;
+import java.util.Scanner;
 
-    public int Sumar(int numero1, int numero2){
-        return numero1 + numero2;
+public class Suma {
+    public int sumar() {
+        int a, b, c = 0;
+        Scanner s = new Scanner( System.in );
+        System.out.println( "Introduce dos números: ");
+        a = s.nextInt();
+        b = s.nextInt();
+        c = a + b;
+        System.out.println( "La suma de a y b es: " + c );
+        return c;
     }
 }
