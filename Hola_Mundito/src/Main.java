@@ -5,13 +5,15 @@ public class Main {
 
 
         System.out.println("Hello world!");
-        int a, b, c = 0;
-        Scanner s = new Scanner( System.in );
-        System.out.println( "Introduce dos números: ");
-        a = s.nextInt();
-        b = s.nextInt();
-        c = a + b;
-        System.out.println( "La suma de a y b es: " + c );
+
+
+        Calculadora calcular = new Calculadora();
+
+        calcular.sumar();
+        calcular.restar();
+        calcular.multiplicacion();
+        calcular.Division();
+
 
         }
     }
