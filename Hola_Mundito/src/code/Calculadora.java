@@ -1,7 +1,11 @@
+package code;
+
 public class Calculadora {
 
-    Calculadora()
-    {}
+    public Calculadora()
+    {
+
+    }
     public int sumar(int numero1, int numero2) {
         return  numero1 + numero2;
     }
@@ -13,7 +17,7 @@ public class Calculadora {
 
         return numero1*numero2;
     }
-    public float Division(int numero1, int numero2) {
+    public int Division(int numero1, int numero2) {
 
         return numero1/numero2;
     }
