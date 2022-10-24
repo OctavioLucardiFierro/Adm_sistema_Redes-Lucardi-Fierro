@@ -1,0 +1,5 @@
+# Ignora la carpeta out
+
+Hola_Mundito/out
+
+#git config --global core.excludesfile ~/.gitignore_global
