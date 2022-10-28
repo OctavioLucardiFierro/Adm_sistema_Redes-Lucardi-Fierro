@@ -5,6 +5,8 @@ import code.Calculadora;
 import org.junit.Test;
 
 //import static org.junit.Assert.assertEquals;
+import java.sql.Array;
+
 import static org.junit.Assert.*;
 
 public class CalculadoraTest {
@@ -54,8 +56,8 @@ public class CalculadoraTest {
         assertNotEquals(calculadora.Division(0, 45), 20);
     }
 
+
+
     @Test
-    public void FuncionCuadratica(){
-        assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1, 2, 1)}), -1,1);
-    }
+    public void  Funcacuadra(){assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1,2,1)}),-1,1);}
 }
