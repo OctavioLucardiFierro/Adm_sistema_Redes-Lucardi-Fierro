@@ -1,7 +1,5 @@
 package code;
 
-import java.util.ArrayList;
-
 public class Calculadora {
 
     public Calculadora()
@@ -25,13 +23,18 @@ public class Calculadora {
         float dentroraiz = b2 - (4*a*c);
         float raiz = (float) Math.sqrt(dentroraiz);
 
+        float cuenta = (float )raiz;
+        float veri =cuenta;
+            if (veri % 2 ==0)
+            {
+                float primero = ((-b + raiz)/2*a);
+                float segundo = ((-b  - raiz)/2*a);
 
-        float primero = ((-b + raiz)/2*a);
-        float segundo = ((-b  - raiz)/2*a);
+                float [] result = {primero, segundo};
 
-        float[] result = {primero, segundo};
-
-        return result;
+                return  result;
+            }
+     return null;
 
     }
     public int sumar(int numero1, int numero2) {

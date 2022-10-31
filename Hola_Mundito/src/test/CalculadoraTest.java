@@ -1,13 +1,13 @@
 package test;
 //import static  org.junit.Assert.assertEquals;
 
-import code.Calculadora;
-import org.junit.Test;
+        import code.Calculadora;
+        import org.junit.Test;
 
 //import static org.junit.Assert.assertEquals;
-import java.sql.Array;
+        import java.sql.Array;
 
-import static org.junit.Assert.*;
+        import static org.junit.Assert.*;
 
 public class CalculadoraTest {
     Calculadora calculadora = new Calculadora();
@@ -57,7 +57,10 @@ public class CalculadoraTest {
     }
 
 
-
     @Test
     public void  Funcacuadra(){assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1,2,1)}),-1,1);}
 }
+
+
+
+
