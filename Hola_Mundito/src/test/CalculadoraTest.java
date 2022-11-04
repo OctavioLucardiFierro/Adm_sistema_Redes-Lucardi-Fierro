@@ -6,6 +6,7 @@ package test;
 
 //import static org.junit.Assert.assertEquals;
         import java.sql.Array;
+        import java.util.Arrays;
 
         import static org.junit.Assert.*;
 
@@ -65,11 +66,19 @@ public class CalculadoraTest {
     }
     @Test
     public void  Funcacuadra3(){
+        double datos [] = calculadora.FuncionCuadratica(1,2,1);
         double result[]= {-1.0, 1.0};  //Si la tolerancia (delta) es muy alta el error pasa (Gran descubrimiento hecho por Barbieri)
-        assertArrayEquals(calculadora.FuncionCuadratica(1,2,1),result,9999); // delta = el numero? de decimales que aproxima
+        assertFalse(Arrays.equals(datos,result)); // delta = el numero? de decimales que aproxima
     }
 
 
+    @Test
+    public void  Funcacuadra4(){
+        double result[]= {145, -5}; // si delta (tolerancia) > 0 es lo mismo que un assertNotArraysEquals
+        //(calculadora.FuncionCuadratica(1,2,1),result);
+        assertArrayEquals(calculadora.FuncionCuadratica(1,4,(-5)),result,9999); // delta = el numero? de decimales que aproxima
+
+    }
     @Test
     public void  Funcacuadra2(){
         double result[]= {1, -5};
