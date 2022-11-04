@@ -1,0 +1,11 @@
+/*ArrayList <Double> arrli = new ArrayList<>();
+        float b2 = b*b;
+        float dentroraiz = b2 - (4*a*c);
+        float raiz = (float) Math.sqrt(dentroraiz);
+
+        double primero = ((-b + raiz)/2*a);
+        double segundo = ((-b  - raiz)/2*a);
+        arrli.add(primero);
+        arrli.add(segundo);
+
+        return arrli;*/

@@ -53,12 +53,30 @@ public class CalculadoraTest {
 
     @Test
     public void DivisionTest3(){
-        assertNotEquals(calculadora.Division(0, 45), 20);
+        assertEquals(calculadora.Division(0, 45), 0);
     }
 
 
     @Test
-    public void  Funcacuadra(){assertEquals(String.valueOf(new float[][]{calculadora.FuncionCuadratica(1,2,1)}),-1,1);}
+    public void  Funcacuadra(){
+        double result[]= {-1.0, -1.0};
+        //(calculadora.FuncionCuadratica(1,2,1),result);
+        assertArrayEquals(calculadora.FuncionCuadratica(1,2,1),result,0); // delta = el numero? de decimales que aproxima
+    }
+    @Test
+    public void  Funcacuadra3(){
+        double result[]= {-1.0, 1.0};  //Si la tolerancia (delta) es muy alta el error pasa (Gran descubrimiento hecho por Barbieri)
+        assertArrayEquals(calculadora.FuncionCuadratica(1,2,1),result,9999); // delta = el numero? de decimales que aproxima
+    }
+
+
+    @Test
+    public void  Funcacuadra2(){
+        double result[]= {1, -5};
+        //(calculadora.FuncionCuadratica(1,2,1),result);
+        assertArrayEquals(calculadora.FuncionCuadratica(1,4,(-5)),result,0); // delta = el numero? de decimales que aproxima
+
+    }
 }
 
 
