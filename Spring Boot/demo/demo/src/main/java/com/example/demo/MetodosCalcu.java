@@ -17,6 +17,7 @@ public class MetodosCalcu {
     float SUMA(@PathVariable float NUM1, @PathVariable float NUM2){
         return NUM1 + NUM2;
     }
+
     @GetMapping("/RESTAR/{NUM1}/{NUM2}")
     float RESTAR(@PathVariable float NUM1, @PathVariable float NUM2){
         return NUM1 - NUM2;
@@ -35,7 +36,7 @@ public class MetodosCalcu {
     }
 
     @GetMapping("/Cuadratica/{a}/{b}/{c}")
-    static double[] FuncionCuadratica(@PathVariable double a, @PathVariable double b,@PathVariable double c){
+    static double[] FuncionCuadratica(@PathVariable float a, @PathVariable float b, @PathVariable float c){
 
         double b2 = b*b;
         double dentroraiz = b2 - (4*a*c);
@@ -43,8 +44,7 @@ public class MetodosCalcu {
 
         double cuenta = (double )raiz;
         double veri =cuenta;
-        if (veri % 2 ==0)
-        {
+
             double primero = ((-b + raiz)/2*a);
             double segundo = ((-b - raiz)/2*a);
 
@@ -52,8 +52,7 @@ public class MetodosCalcu {
 
 
             return  result;
-        }
-        return null;
+
 
     }
 }
