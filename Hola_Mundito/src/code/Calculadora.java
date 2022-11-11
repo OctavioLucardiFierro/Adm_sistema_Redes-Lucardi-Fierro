@@ -20,7 +20,7 @@ public class Calculadora {
             if (veri % 2 ==0)
             {
                 double primero = ((-b + raiz)/2*a);
-                double segundo = ((-b  - raiz)/2*a);
+                double segundo = ((-b - raiz)/2*a);
 
                 double  result[] = {primero, segundo};
 
