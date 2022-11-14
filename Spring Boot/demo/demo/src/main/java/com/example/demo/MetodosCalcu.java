@@ -27,16 +27,17 @@ public class MetodosCalcu {
     float Multiplicar(@PathVariable float NUM1, @PathVariable float NUM2){
         return NUM1 * NUM2;
     }
+
     @GetMapping("/Dividir/{NUM1}/{NUM2}")
-    Object Dividir(@PathVariable float NUM1, @PathVariable float NUM2){
+    float Dividir(@PathVariable float NUM1, @PathVariable float NUM2){
         if (NUM2 != 0){
             return NUM1 / NUM2;
         }
-        return "No se puede dividir por 0";
+        throw new ArithmeticException("No se puede dividir por 0");
     }
 
     @GetMapping("/Cuadratica/{a}/{b}/{c}")
-    static double[] FuncionCuadratica(@PathVariable float a, @PathVariable float b, @PathVariable float c){
+    public double[] FuncionCuadratica(@PathVariable float a, @PathVariable float b, @PathVariable float c){
 
         double b2 = b*b;
         double dentroraiz = b2 - (4*a*c);
