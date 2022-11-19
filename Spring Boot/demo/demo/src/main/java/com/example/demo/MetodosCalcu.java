@@ -39,12 +39,13 @@ public class MetodosCalcu {
     @GetMapping("/Cuadratica/{a}/{b}/{c}")
     public double[] FuncionCuadratica(@PathVariable float a, @PathVariable float b, @PathVariable float c){
 
-        double b2 = b*b;
-        double dentroraiz = b2 - (4*a*c);
-        double raiz = (double) Math.sqrt(dentroraiz);
+        if (a != 0){
+            double b2 = b*b;
+            double dentroraiz = b2 - (4*a*c);
+            double raiz = (double) Math.sqrt(dentroraiz);
 
-        double cuenta = (double )raiz;
-        double veri =cuenta;
+            double cuenta = (double )raiz;
+            double veri =cuenta;
 
             double primero = ((-b + raiz)/2*a);
             double segundo = ((-b - raiz)/2*a);
@@ -53,7 +54,9 @@ public class MetodosCalcu {
 
 
             return  result;
+        }
 
+        throw new ArithmeticException("a no puede ser 0");
 
     }
 }
